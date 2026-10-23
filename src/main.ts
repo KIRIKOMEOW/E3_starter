@@ -1,3 +1,9 @@
+// @deno-types="./asset-url.d.ts"
+import catEarsUrl from "./assets/cat-ears.svg?no-inline";
+
+// @deno-types="./asset-url.d.ts"
+import fishBadgeUrl from "./assets/fish-badge.svg?no-inline";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -5,7 +11,10 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute(
+  "aria-label",
+  "A cat explorer with two ears and a fish badge",
+);
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -58,6 +67,30 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+// Image 1: Cat ears
+const ears = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+ears.setAttribute("href", catEarsUrl);
+ears.setAttribute("x", "40");
+ears.setAttribute("y", "2");
+ears.setAttribute("width", "120");
+ears.setAttribute("height", "70");
+face.append(ears);
+
+// Image 2: Fish badge
+const badge = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+badge.setAttribute("href", fishBadgeUrl);
+badge.setAttribute("x", "124");
+badge.setAttribute("y", "111");
+badge.setAttribute("width", "38");
+badge.setAttribute("height", "38");
+face.append(badge);
 
 portrait.append(face);
 

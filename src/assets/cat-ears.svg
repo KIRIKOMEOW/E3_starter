@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90">
+  <path d="M18 80 L34 10 L88 75 Z"
+    fill="#d99b62"
+    stroke="#302c29"
+    stroke-width="5" />
+  <path d="M112 75 L166 10 L182 80 Z"
+    fill="#d99b62"
+    stroke="#302c29"
+    stroke-width="5" />
+  <path d="M35 60 L40 30 L66 65 Z" fill="#f6a6b2" />
+  <path d="M134 65 L160 30 L165 60 Z" fill="#f6a6b2" />
+</svg>
