@@ -5,7 +5,7 @@ const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 const face = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 face.setAttribute("viewBox", "0 0 200 200");
 face.setAttribute("role", "img");
-face.setAttribute("aria-label", "A neutral face");
+face.setAttribute("aria-label", "An alien face with many purple freckles");
 
 const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
 head.setAttribute("cx", "100");
@@ -58,6 +58,23 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+// Alternative A: 120 visible freckles made with loops
+for (const centerX of [68, 132]) {
+  for (let row = 0; row < 6; row++) {
+    for (let col = 0; col < 10; col++) {
+      const dot = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "circle",
+      );
+      dot.setAttribute("cx", String(centerX - 20 + col * 4.5));
+      dot.setAttribute("cy", String(108 + row * 5));
+      dot.setAttribute("r", "1.5");
+      dot.setAttribute("fill", "#7e57c2");
+      face.append(dot);
+    }
+  }
+}
 
 portrait.append(face);
 
