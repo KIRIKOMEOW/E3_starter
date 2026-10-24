@@ -15,3 +15,19 @@ I will make a sleepy moon face. The head will have a gradient from purple to lig
 ## Selection Criterion
 
 I will choose the portrait that looks the clearest and most interesting at a small size.
+
+## Exploration Results
+
+**A - Explored (Branch A)**
+
+I added 120 purple freckles using loops. The alien face looks playful and different from the original face.
+
+**B - Explored (Branch B)**
+
+I added two SVG images: cat ears and a fish badge. Both images are visible, and the Spin button still works.
+
+**C - Explored (Branch C)**
+
+I added a purple-to-blue gradient and Bezier curves for the eyes and mouth. The final result matches my original sleepy moon face plan.
+
+All three alternatives were explored independently on separate branches. The original face on main remains unchanged.
