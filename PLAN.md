@@ -31,3 +31,15 @@ I added two SVG images: cat ears and a fish badge. Both images are visible, and 
 I added a purple-to-blue gradient and Bezier curves for the eyes and mouth. The final result matches my original sleepy moon face plan.
 
 All three alternatives were explored independently on separate branches. The original face on main remains unchanged.
+
+## Final Decision
+
+**Chosen Alternative: C - Color and Curves**
+
+I chose C because the purple-to-blue gradient and curved eyes make the face clear and interesting, even at a small size.
+
+A has many small freckles, but some details are hard to see. B has fun cat ears and a fish badge, but C looks cleaner and more consistent.
+
+C also matches my original selection criterion. Alternatives A and B remain on their own branches for future reference.
+
+The chosen C portrait is now on main, and its SVG is built inside the `buildFace()` function.
